@@ -1,2 +1,2 @@
-# thinkscript-syntax
-A syntax theme for thinkscript using Atom
+# language-thinkscript
+thinkscript language support in Atom
