@@ -1,2 +1,2 @@
 # language-thinkscript
-thinkscript language support in Atom
+A syntax highlighter for thinkscript in Atom
