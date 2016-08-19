@@ -11,6 +11,38 @@
 		'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
 		'name': 'constant.numeric.thinkscript'
 	}
+    {
+		'match': '\\b(above|ago|and|bar|bars|below|between|case|crosses|declare|def|default|do|else|equal|equals|false|fold|from|greater|if|input|is|less|no|not|or|plot|profile|rec|reference|script|switch|than|then|to|true|while|with|within|yes)\\b'
+		'name': 'reserved.words.thinkscript'
+	}
+    {
+		'match': '\\b(hide_on_daily|hide_on_intraday|lower|on_volume|once_per_bar|real_size|upper|weak_volume_dependency|zerobase)\\b'
+		'name': 'declarations.thinkscript'
+	}
+    {
+		'match': '\\b(open|high|low|close|hl2|hlc3|ohlc4|volume)\\b'
+		'name': 'price.constants.thinkscript'
+	}
+    {
+		'match': '\\b(ask|bid|imp_volatility|open_interest|vwap|Delta|Gamma|GetATMOption|GetDaysToExpiration|GetNextExpirationOption|GetNextITMOption|GetNextOTMOption|GetStrike|GetUnderlyingSymbol|IsEuropean|IsOptionable|IsPut|OptionPrice|Rho|Theta|Vega|AccumDist|AccumDist|Average|AvgTrueRange|BodyHeight|EMA2|ExpAvrage|FastKCustom|GetMarketMakerMove|GetMaxValueOffset|GetMinValueOffset|Highest|HighestAll|HighestWeighted|IsAscending|IsDescending|IsDoji|IsLongBlack|IsLongWhite|Lowest|LowestAll|LowestWeighted|Median|MidBodyVal|MoneyFlow|MovingAverage|TrueRange|Ulcer|WildersAverage|WMA|AbsValue|ACos|ASin|ATan|Ceil|Cos|Crosses|Exp|Floor|IsInfinite|IsNaN|Lg|Log|Max|Min|Power|Random|Round|RoundDown|RoundUp|Sign|Sin|Sqr|Sqrt|Sum|Tan|TotalSum|Correlation|Covariance|Inertia|InertiaAll|LinDev|StDev|StDevAll|StErr|StErrAll|CountTradingDays|DaysFromDate|DaysTillDate|GetDay|GetDayOfMonth|GetDayOfWeek|GetLastDay|GetLastMonth|GetLastWeek|GetLastYear|GetMonth|GetWeek|GetYear|GetYYYYMMDD|RegularTradingEnd|RegularTradingStart|SecondsFromTime|SecondsTillTime|GetActualEarnings|GetDividend|GetEstimatedEarnings|GetEventOffset|GetSplitDenominator|GetSplitNumerator|HasConferenceCall|HasEarnings|AddChartBubble|AddCloud|AddLabel|AddVerticalLine|AssignBackgroundColor|AssignNormGradientColor|AssignPriceColor|AssignValueColor|Color|CreateColor|DefineColor|DefineGlobalColor|EnableApproximation|GetColor|GlobalColor|Hide|HideBubble|HidePricePlot|HideTitle|SetChartType|SetDefaultColor|SetHiding|SetLineWeight|SetPaintingStrategy|SetStyle|TakeValueColor|GetHighest|GetHighestValueArea|GetLowest|GetLowestValueArea|GetPointOfControl|MonkeyBars|Show|TimeProfile|VolumeProfile|AddOrder|Alert|AsDollars|AsPercent|AsPrice|Assert|AsText|BarNumber|Between|CompoundValue|Concat|EntryPrice|First|FPL|Fundamental|GetAggregationPeriod|GetInterestRate|GetPriceType|GetSymbol|GetSymbolPart|GetValue|GetYield|HasContractChangeEvent|If|TickSize|TickValue)\\b'
+		'name': 'functions.thinkscript'
+	}
+    {
+		'match': '\\b(AggregationPeriod|Alert|AverageType|ChartType|Color|CrossingDirection|Curve|Double|EarningTime|Events|FundamentalType|MonkeyVolumeShowStyle|NumberFormat|OptionClass|OrderType|PaintingStrategy|PricePerRow|Sound|NoSound|Bell|Ding|Ring|Chime||MIN|TWO_MIN|THREE_MIN|FOUR_MIN|FIVE_MIN|TEN_MIN|FIFTEEN_MIN|TWENTY_MIN|THIRTY_MIN|HOUR|TWO_HOURS|FOUR_HOURS|DAY|TWO_DAYS|THREE_DAYS|FOUR_DAYS|WEEK|MONTH|OPT_EXP|BAR|ONCE|TICK|EXPONENTIAL|HULL|SIMPLE|WEIGHTED|WILDERS|BAR|CANDLE|CANDLE_TREND|HEIKIN_ASHI|EQUIVOLUME|LINE|AREA|BLACK|BLUE|CURRENT|CYAN|DARK_GRAY|DARK_GREEN|DARK_ORANGE|DARK_RED|DOWNTICK|GRAY|GREEN|LIGHT_GRAY|LIGHT_GREEN|LIGHT_ORANGE|LIGHT_RED|LIME|MAGENTA|ORANGE|PINK|PLUM|RED|UPTICK|VIOLET|WHITE|YELLOW|ABOVE|BELOW|ANY|FIRM|LONG_DASH|MEDIUM_DASH|SHORT_DASH|POINTS|E|NaN|NEGATIVE_INFINITY|Pi|POSITIVE_INFINITY|ANY|BEFORE_MARKET|AFTER_MARKET|CONFERENCE_CALL|DIVIDEND|EARNINGS|SPLIT|HIGH|LOW|CLOSE|OPEN|HL2|HLC3|OHLC4|VWAP|VOLUME|OPEN_INTEREST|IMP_VOLATILITY|ALL|LAST|NONE|DOLLAR|THREE_DECIMAL_PLACES|TWO_DECIMAL_PLACES|CALL|PUT|BUY_AUTO|BUY_TO_CLOSE|BUY_TO_OPEN|SELL_AUTO|SELL_TO_CLOSE|SELL_TO_OPEN|ARROW_DOWN|ARROW_UP|BOOLEAN_ARROW_DOWN|BOOLEAN_ARROW_UP|BOOLEAN_POINTS|DASHES|HISTOGRAM|HORIZONTAL|LINE|LINE_VS_POINTS|LINE_VS_SQUARES|LINE_VS_TRIANGLES|POINTS|SQUARED_HISTOGRAM|SQUARES|TRIANGLES|VALUES_ABOVE|VALUES_BELOW|AUTOMATIC|TICKSIZE)\\b'
+		'name': 'constants.thinkscript'
+	}
+    {
+		'match': '\\b(!|%|&|*|+|-|//|/|:|<|=|>|?|[|]|^|&&)\\b'
+		'name': 'operators.thinkscript'
+	}
+    {
+		'match': '\\b(.|(|)|,|;|{|})\\b'
+		'name': 'separators.thinkscript'
+	}
+    {
+		'match': '\\b(~|!|@|%|^|&|*|(|)|-|+|=|\|/|{|}|[|]|:|;|"|'|<|>|,|.|?)\\b'
+		'name': 'delimiters.thinkscript'
+	}
 
 
 	'include': '#comment'
@@ -19,12 +51,5 @@
 'repository':
   'comment':
     'captures':
-      '1':
-        'name': 'comment.line.number-sign.thinkscript'
-      '2':
-        'name': 'punctuation.definition.comment.thinkscript'
-      '3':
-        'name': 'comment.line.semi-colon.thinkscript'
-      '4':
-        'name': 'punctuation.definition.comment.thinkscript'
-    'match': '((#).*$\\n?)|((;).*$\\n?)'
+      'name': 'comment.line.number-sign.thinkscript'
+	  'match': '((#).*$\\n?)|((;).*$\\n?)'
