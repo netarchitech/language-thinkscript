@@ -1,8 +1,7 @@
-'scopeName': 'source.ts'
+'scopeName': 'source.thinkscript'
 'name': 'thinkscript'
 'fileTypes': [
   'ts'
-  'txt'
 ]
 'foldingStartMarker': '{'
 'foldingStopMarker': '}'
