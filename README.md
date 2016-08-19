@@ -1,4 +1,4 @@
-<h2><strong>Language-Thinkscript<strong/><h2/>
+<h2>Language-Thinkscript<h2/>
 
 A syntax highlighter for thinkscript using Atom.
 
